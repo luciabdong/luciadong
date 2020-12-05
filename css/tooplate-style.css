@@ -10,7 +10,7 @@ http://www.tooplate.com/view/2090-kinetic
 
 /* Lucia Dong on the front page */
 .name-title {
-  
+  margin-bottom: 30px;
 }
 
 .page {
@@ -37,6 +37,13 @@ http://www.tooplate.com/view/2090-kinetic
   width: 60%;
 }
 
+.center-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+}
 
 /* default */
 
@@ -305,7 +312,7 @@ a {
 }
 
 #p1 p {
-	margin: 20px 30% 20px 30%;
+	/* margin: 20px 30% 20px 30%; */
 }
 
 
@@ -321,9 +328,11 @@ a {
   padding-bottom: 40px;
 }
 
-#p2 .right-image img {
+#p2 .right-image img { /* About page image */
+  width: 300px;
+  height: auto;
 	max-width: 100%;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 #p2 .title {
@@ -679,7 +688,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: #fff;
 }
 
 .lb-outerContainer:after {
