@@ -553,6 +553,7 @@ h4 {
 	
 	.name-title { /* Lucia Dong on the front page */
 		margin-bottom: 30px;
+		color: red;
 		font-family: 'Montserrat', sans-serif;
 		text-transform: uppercase;
 		font-weight: 500;
@@ -597,6 +598,7 @@ h4 {
 		}
 		
 		.right-image {
+			justify-self: flex end;
 			margin-bottom: 40px;
 			img {
 				width: 200px;
