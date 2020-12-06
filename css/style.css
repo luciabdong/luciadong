@@ -12,15 +12,16 @@ html, body, .page {
   -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
   color: white;
   background-color: #7ab6e7;
-  overflow: hidden;
   font-family: "Overpass", sans-serif;
   display: flex;
   flex-direction: row;
   font-weight: 300px;
+  font-size: 16px;
 }
 
-.page {
-  overflow: scroll;
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 div {
@@ -37,13 +38,19 @@ p {
 a {
   text-decoration: none !important;
   color: #337ab7;
+  margin: 5px;
+  padding: 5px;
+}
+
+a:hover {
+  color: #1a4f66;
 }
 
 h4 {
   display: flex;
   margin: 0px;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 36px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
@@ -57,13 +64,6 @@ h4 {
 }
 .nav-bar div {
   margin-left: 10px;
-}
-.nav-bar a {
-  margin: 5px;
-  padding: 5px;
-}
-.nav-bar a :hover {
-  color: grey;
 }
 
 .credit {
@@ -87,7 +87,7 @@ h4 {
   align-items: center;
   text-align: center;
   width: 550px;
-  margin-left: -50px;
+  margin-left: -10%;
 }
 #p1 .quote-author {
   align-self: flex-end;
@@ -96,13 +96,19 @@ h4 {
 #p2 {
   flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12% 50px 50px 10%;
+}
+#p2 .about-container {
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0px 50px 50px 100px;
 }
 #p2 .left-text {
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 50px;
+  max-width: 900px;
 }
 #p2 .left-text p {
   text-indent: 40px;
@@ -114,7 +120,7 @@ h4 {
 #p2 .credit {
   position: fixed;
   bottom: 0px;
-  left: 45%;
+  right: 5px;
 }
 
 #p3 {
@@ -128,6 +134,25 @@ h4 {
   max-width: 900px;
 }
 
+@media (min-width: 1500px) {
+  .nav-bar {
+    width: 150px;
+  }
+
+  a {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  #p2 img {
+    width: 400px;
+    height: 550px;
+  }
+}
 @media (max-width: 920px) {
   #p2 img {
     width: 200px;
@@ -151,24 +176,20 @@ h4 {
   .nav-bar div {
     margin-left: 0px;
   }
-  .nav-bar a {
-    margin: 5px;
-    padding: 5px;
-  }
-  .nav-bar a :hover {
-    color: grey;
-  }
 
   #p1 .center-box {
     margin-top: -50px;
     margin-left: 0px;
   }
 
+  #p2 {
+    padding: 8% 50px 50px 12%;
+  }
   #p2 .left-text {
     flex-direction: column;
     justify-content: flex-start;
     width: 45%;
-    margin-right: 50px;
+    margin-right: 60px;
   }
   #p2 .left-text p {
     text-indent: 40px;
@@ -182,6 +203,21 @@ h4 {
   }
 }
 @media (max-width: 750px) {
+  div {
+    flex-shrink: 0;
+  }
+
+  a, p {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  #p1 {
+    height: 80%;
+  }
   #p1 .center-box {
     width: 250px;
   }
@@ -196,28 +232,25 @@ h4 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 50px 50px 30px;
+    padding: 0px 50px 0px 0px;
   }
-  #p2 h4 {
-    font-size: 30px;
+  #p2 .about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
   #p2 .left-text {
     flex-direction: column;
     justify-content: flex-start;
     width: 80%;
-    margin-right: 50px;
+    margin: 0px 50px 20px 50px;
   }
   #p2 .left-text p {
-    text-indent: 40px;
-  }
-  #p2 .right-image {
-    margin-top: 20px;
-    margin-left: -30px;
+    text-indent: 20px;
   }
   #p2 .credit {
     position: static;
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin-top: 50px;
   }
 }
 
