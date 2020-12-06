@@ -1,0 +1,615 @@
+// custom styling
+// base template from: http://www.tooplate.com/view/2090-kinetic
+@import './variables.scss';
+
+/* custom */
+
+div {
+	display: flex;
+}
+
+.name-title { /* Lucia Dong on the front page */
+	margin-bottom: 30px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-container {
+	padding-left: 100px;
+}
+
+.contact-form {
+	width: 60%;
+}
+
+.center-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 550px;
+}
+
+.container {
+	padding: 0px 50px;
+	height: 100%;
+}
+
+.row {
+	height: 100%;
+	align-items: center;
+}
+
+/* default */
+
+body {
+	font-family: 'Overpass', sans-serif;
+}
+
+p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 23px;
+}
+
+* {
+	transition: all 500ms ease-out;
+	-webkit-transition: all 500ms ease-out;
+}
+
+html, body, section, .page {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+	-webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+	color: #fff;
+	background-color: $background-blue;
+	overflow: hidden;
+}
+
+section {
+	width:400%;  
+}
+
+.page {
+	position: absolute;
+}
+
+#p1 {
+	left: 0;
+}
+
+#p2 {
+	left: 100%;
+}
+
+#p3 {
+	left: 200%;
+}
+
+#p4 {
+	left: 300%;
+}
+
+#t1:target .page#p1 {
+	transform: translateX(0);
+}
+#t2:target .page#p2 {
+	transform: translateX(-90%);
+}
+#t3:target .page#p3 {
+	transform: translateX(-190%);
+}
+#t4:target .page#p4 {
+	transform: translateX(-290%);
+}
+
+.page#p1 {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#t2:target #dos, #t3:target #tres, #t4:target #cuatro {
+	color: white; /* change selected nav title color here */
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+
+/* Navigation */
+ul {
+	padding-top: 20%;
+	position: fixed; 
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	/*right: 0;*/
+	margin: auto;
+	height: auto;
+	width: auto;
+	padding-left: 30px;
+	padding-right: 0;
+	padding-bottom: 0;
+	text-align: left;
+	background-color: rgba(48, 51, 60, 0);
+	list-style-type: none;
+}
+
+ul li {
+	margin: 30px 0;
+}
+
+a {
+	text-decoration: none!important;
+	color: $link-color;
+}
+
+.title, .hint {
+	display: block;
+}
+
+h4 {
+	letter-spacing: 1px;
+	font-size: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.page {
+	overflow-y: scroll;
+}
+
+.credit {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Overpass', sans-serif;
+	
+	a {
+		color: white
+	}
+}
+
+.primary-button {
+	a {
+		font-family: 'Overpass', sans-serif;
+		display: inline-block;
+		padding: 15px 25px;
+		background-color: $button-color;
+		color: white;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		border-radius: 25px;
+		border: 1px solid transparent;
+		text-decoration: none;
+	}
+	
+	:hover {
+		background-color: transparent;
+		border: 1px solid white;
+	}
+}
+
+#p1 {
+	.primary-button {
+		display: block;
+		margin-top: -20px;
+		padding-bottom: 60px;
+	}
+	
+	span {
+		font-size: 15px;
+		font-family: 'Overpass', sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+	
+	h4 {
+		font-size: 60px;
+		text-transform: uppercase;
+	}
+}
+
+#p2 {
+	.left-text {
+		text-align: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		flex-direction: column;
+		width: 450px;
+	}
+	
+	.primary-button {
+		margin-bottom: 30px;
+	}
+	
+	.right-image {
+		margin-left: 20px;
+		padding-bottom: 40px;
+		align-self: center;
+		
+		img {
+			width: 300px;
+			height: 413px;
+			max-width: 100%;
+			overflow: hidden;
+		}
+	}
+	
+	.title {
+		font-size: 15px;
+		font-family: 'Overpass', sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-bottom: 60px;
+	}
+}
+
+#p3 {
+	.left-text {
+		flex-direction: column;
+	}
+}
+
+/* currently no p4 */
+#p4 {
+	h4 {
+		letter-spacing: 1px;
+		font-size: 48px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		text-align: left;
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+	.title {
+		font-size: 15px;
+		font-family: 'Overpass', sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-bottom: 60px;
+	}
+	fieldset {
+		margin-bottom: 15px;
+	}
+	input {
+		font-family: 'Overpass', sans-serif;
+		padding-left: 15px;
+		max-width: 100%;
+		height: 40px;
+		display: inline-block;
+		line-height: 40px;
+		font-size: 13px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.3);
+		border: none;
+		outline: none;
+		border-radius: 0;
+		box-shadow: none;
+		&:focus {
+			outline: none !important;
+			box-shadow: none;
+		}
+	}
+	textarea {
+		font-family: 'Overpass', sans-serif;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		padding-left: 15px;
+		width: 100%;
+		max-width: 100%;
+		max-height: 180px;
+		height: 140px;
+		display: inline-block;
+		line-height: 40px;
+		font-size: 13px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.3);
+		border: none;
+		outline: none !important;
+		border-radius: 0;
+		box-shadow: none;
+		&:focus {
+			outline: none !important;
+			box-shadow: none;
+		}
+	}
+	button {
+		font-family: 'Overpass', sans-serif;
+		display: inline-block;
+		padding: 15px 25px;
+		background-color: $button-color;
+		color: #fff;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		left: 0.5px;
+		border-radius: 25px;
+		border: 1px solid transparent;
+		&:hover {
+			color: #fff;
+			background-color: transparent;
+			border: 1px solid #fff;
+			-moz-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+			-webkit-transition: all 0.2s linear;
+		}
+	}
+	.right-info {
+		background-color: #fff;
+		padding: 30px;
+		color: #343434;
+		text-align: left;
+		margin-bottom: 60px;
+		p {
+			em {
+				font-style: normal;
+				font-weight: 500;
+			}
+		}
+		.social-icons {
+			margin-top: 45px;
+		}
+		ol {
+			padding: 0;
+			margin: 0;
+		}
+		i {
+			margin-right: 10px;
+			color: #fff;
+			font-size: 15px;
+			width: 34px;
+			height: 34px;
+			background-color: #cdcdcd;
+			display: inline-block;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 34px;
+			&:hover {
+				background-color: $button-color;
+				-moz-transition: all 0.3s linear;
+				-o-transition: all 0.3s linear;
+				-webkit-transition: all 0.3s linear;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	@media (min-width: 820px) {
+		#p2 {
+			h4 {
+				font-size: 40px;
+			}
+			
+			.row {
+				display: flex;
+				flex-direction: row;
+				
+			}
+			
+			.left-text {
+				margin-bottom: 45px;
+				width: 50%;
+			}
+			
+			.right-image {
+				margin-bottom: 40px;
+				img {
+					width: 250px;
+					height: 344px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 820px) { /* narrow screen size */
+	* {
+		transition: none !important;
+		-webkit-transition: none !important;
+	}
+	.section {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	#p1 {
+		.primary-button {
+			margin-bottom: 100px;
+		}
+		
+		h4 {
+			letter-spacing: 1px;
+			font-size: 36px;
+			font-family: 'Overpass', sans-serif;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		
+		p {
+			margin: 20px;
+		}
+	}
+	
+	html, body, section, .page {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		transition: none !important;
+		-webkit-transition: none !important;
+		color: #fff;
+	}
+	
+	.credit {
+		margin-bottom: 0px;
+		padding: 8px 0px;
+	}
+	
+	.name-title { /* Lucia Dong on the front page */
+		margin-bottom: 30px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	
+	ul {
+		padding-top: 50%!important;
+	}
+	
+	h4 {
+		font-size: 36px;
+	}
+	
+	.nav-bar {
+		display: flex;
+		padding-top: 0px !important;
+		
+		a {
+			background-color: $background-blue;
+			height: 50px;
+			padding: 0px 5px;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+		}
+	}
+	
+	#uno, #dos, #tres, #cuatro {
+		padding: 0px 10px;
+	}
+	
+	#t1:target .page#p1 {
+		transform: translateX(0);
+	}
+	
+	#t2:target .page#p2 {
+		transform: translateX(-100%) translateY(0%);
+		width: 100%;
+		padding-top: 100px;
+		padding-left: 120px;
+		padding-right: 30px;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		
+		.container {
+			margin-top: 50px;
+		}
+	}
+	
+	#t3:target .page#p3 {
+		transform: translateX(-200%) translateY(0%);
+		
+		.row {
+			width: 100%;
+			height: 100%;
+			flex-direction: column;
+			align-items: center;
+			margin: 0px;
+		}
+		
+		.container {
+			margin: 0px !important;
+			height: 100%;
+			padding-top: 180px;
+		}
+	}
+	
+	#t4:target .page#p4 {
+		transform: translateX(-100%) translateY(15%);
+	}
+	
+	.center-box {
+		width: 300px;
+	}
+	
+	.name-title { /* Lucia Dong on the front page */
+		margin-bottom: 30px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	
+	.quote-author {
+		align-self: center !important;
+	}
+	
+	#p2 {
+		padding: 0px !important;
+		height: 100%;
+		width: 750px;
+		text-align: center;
+		
+		.row {
+			width: 100%;
+			height: auto;
+			flex-direction: column !important;
+			align-items: center;
+			margin: 0px;
+		}
+		
+		.container {
+			margin: 0px !important;
+			height: 100%;
+			padding-top: 80px;
+		}
+		
+		h4 {
+			margin-bottom: 20px;
+		}
+		
+		.left-text {
+			width: 95%;
+			text-align: center;
+			margin-bottom: 45px;
+		}
+		
+		p {
+			text-indent: 20px !important;
+		}
+		
+		.right-image {
+			margin-bottom: 40px;
+
+			img {
+				width: 200px;
+				height: 275px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) { /* phone screen size */
+	.right-image {
+		margin-top: 800px;
+		display: none;
+	}
+}
