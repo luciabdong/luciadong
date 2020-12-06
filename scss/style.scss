@@ -597,7 +597,6 @@ h4 {
 		}
 		
 		.right-image {
-			justify-self: flex-end;
 			margin-top: 200px;
 			margin-bottom: 40px;
 
@@ -606,5 +605,11 @@ h4 {
 				height: 275px;
 			}
 		}
+	}
+}
+
+@media (max-width: 400px) { /* phone screen size */
+	.right-image {
+		margin-top: 200px;
 	}
 }

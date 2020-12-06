@@ -558,13 +558,18 @@ h4 {
     text-indent: 20px !important;
   }
   #p2 .right-image {
-    justify-self: flex-end;
     margin-top: 200px;
     margin-bottom: 40px;
   }
   #p2 .right-image img {
     width: 200px;
     height: 275px;
+  }
+}
+@media (max-width: 400px) {
+  /* phone screen size */
+  .right-image {
+    margin-top: 200px;
   }
 }
 
