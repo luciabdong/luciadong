@@ -558,7 +558,6 @@ h4 {
     text-indent: 20px !important;
   }
   #p2 .right-image {
-    margin-top: 200px;
     margin-bottom: 40px;
   }
   #p2 .right-image img {
@@ -570,6 +569,7 @@ h4 {
   /* phone screen size */
   .right-image {
     margin-top: 800px;
+    display: none;
   }
 }
 

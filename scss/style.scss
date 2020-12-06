@@ -597,7 +597,6 @@ h4 {
 		}
 		
 		.right-image {
-			margin-top: 200px;
 			margin-bottom: 40px;
 
 			img {
@@ -610,6 +609,7 @@ h4 {
 
 @media (max-width: 400px) { /* phone screen size */
 	.right-image {
-		margin-top: 800px; 
+		margin-top: 800px;
+		display: none;
 	}
 }
