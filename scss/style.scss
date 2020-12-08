@@ -16,7 +16,7 @@ html, body, .page {
 	transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
 	-webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
 	color: $body;
-	background-color: $background-blue;
+	background-color: white;
 	font-family: 'Overpass', sans-serif;
 	display: flex;
 	flex-direction: row;
@@ -26,7 +26,7 @@ html, body, .page {
 
 html {
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 
 .page {
@@ -55,6 +55,7 @@ p {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 23px;
+	margin-bottom: 0px;
 }
 
 a {
@@ -77,7 +78,22 @@ h4 {
 	font-weight: 500;
 }
 
+// background colors
+
+#color-1 {
+	background-color: $background-1;
+}
+
+#color-2 {
+	background-color: $background-2;
+}
+
+#color-3 {
+	background-color: $background-3;
+}
+
 // nav bar
+
 .nav-bar {
 	flex-direction: column;
 	justify-content: center;
@@ -87,6 +103,30 @@ h4 {
 
 	div {
 		margin-left: 10px;
+	}
+}
+
+#nav-2 {
+	background-color: $background-2;
+
+	a {
+		color: $link-2;
+	}
+
+	a:hover {
+		color: $link-hover-2;
+	}
+}
+
+#nav-3 {
+	background-color: $background-3;
+
+	a {
+		color: $link-3;
+	}
+
+	a:hover {
+		color: $link-hover-3;
 	}
 }
 
@@ -103,6 +143,7 @@ h4 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: $background-1;
 	
 	.name-title {
 		margin-bottom: 30px;
@@ -130,7 +171,8 @@ h4 {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 12% 50px 50px 10%;
+	padding: 12% 80px 50px 5%;
+	background-color: $background-2;
 	
 	.about-container {
 		flex-direction: row;
@@ -144,7 +186,7 @@ h4 {
 		margin-right: 50px;
 		max-width: 900px;
 		p {
-			text-indent: 40px;
+			text-indent: 0px;
 		}
 	}
 	
@@ -167,6 +209,7 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	padding: 0px 50px 50px 100px;
+	background-color: $background-3;
 
 	.main-text {
 		flex-direction: column;
@@ -215,6 +258,8 @@ h4 {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 
 	.nav-bar {
@@ -245,7 +290,7 @@ h4 {
 			width: 45%;
 			margin-right: 60px;
 			p {
-				text-indent: 40px;
+				text-indent: 0px;
 			}
 		}
 	}
@@ -312,7 +357,7 @@ h4 {
 			margin: 0px 50px 20px 50px;
 
 			p {
-				text-indent: 20px;
+				text-indent: 0px;
 			}
 		}
 
