@@ -25,6 +25,8 @@ html {
 }
 
 .page {
+  height: auto;
+  overflow-y: auto;
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -49,6 +51,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
+  margin-bottom: 0px;
 }
 
 a {
@@ -217,6 +220,11 @@ h4 {
     align-items: flex-start;
     overflow-y: auto;
     overflow-x: hidden;
+    height: auto;
+  }
+
+  .page {
+    overflow-y: visible;
   }
 
   .nav-bar {

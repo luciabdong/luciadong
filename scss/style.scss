@@ -30,6 +30,10 @@ html {
 }
 
 .page {
+	height: auto;
+	overflow-y: auto;
+
+	// transition
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -243,7 +247,7 @@ h4 {
 }
 
 // normal screen
-@media (max-width: 920px) {
+@media (max-width: 920px) {	
 	#p2 {
 		img {
 			width: 200px;
@@ -260,6 +264,11 @@ h4 {
 		align-items: flex-start;
 		overflow-y: auto;
 		overflow-x: hidden;
+		height: auto;
+	}
+
+	.page {
+		overflow-y: visible;
 	}
 
 	.nav-bar {
