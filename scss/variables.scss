@@ -1,15 +1,27 @@
 // Standard styling variables used throughout the app
 
-$body: white;
+$body: white; // font color
+$link-selected: white; // color of nav bar link for current page
 
-$background-1: #7ab6e7;
-$link: #337ab7;
-$link-hover: #fadb76;
+// page 1
+$background-1: #7ab6e7; // background color
+$link: #337ab7; // nav bar link color
+$link-hover: #fadb76; // nav bar link hover color
 
+// page 2
 $background-2: #89ABe3;
 $link-2: #3b7222;
 $link-hover-2: #fadb76;
 
+// page 3
 $background-3: #faba85;
 $link-3: #3b7222;
 $link-hover-3: #fadb76;
+
+// page 3 photo gallery
+$slide-background: #ecbf9a;
+$arrow: white;
+$arrow-hover:  #e08235;
+$caption-background: #dba274;
+$caption-font: white;
+$thumbnail-background: #92653e;
