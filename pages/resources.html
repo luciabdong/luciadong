@@ -34,8 +34,8 @@
       <div id="dos">
         <a href="./about.html">About</a>
       </div>
-      <div id="tres" class="a-selected">
-        <a href="./resources.html">Resources</a>
+      <div id="tres">
+        <a href="./resources.html" class="a-selected">Resources</a>
       </div>
       <div id="cuatro">
         <a href="mailto:luciabdong@gmail.com">Email</a>
@@ -49,15 +49,16 @@
       <div class="main-text">
         <h4>Resources</h4>
         <p>
-          Before I began my studies, I read dozens of articles and books, attended lectures, conferences, and seminars, all relating to how music affects the brain and body. This led me to shadow first hand programs, and together, contributed to the understanding of how music becomes a form of medicine. I am grateful to have found music therapy and the opportunity to study at Berklee, a direction that incorporates my passions and beliefs into a purpose I can dedicate my full energy into for a positive future. Here are some resources that I have found interesting and helpful on my journey.
+          Before I began my studies, I read dozens of articles and books and attended lectures, conferences, and seminars, all relating to how music affects the brain and body. This led me to shadow first hand programs, and together, contributed to my understanding of how music becomes a form of medicine. I am grateful to have found music therapy and the opportunity to study at Berklee, a direction that incorporates my passions and beliefs into a purpose that I can dedicate my full energy into for a positive future. Here are some resources that I have found interesting and helpful on my journey.
         </p>
         <p> 
-          <i>These resources are offered merely as an introduction on topics regarding music therapy and the psychology of music, in which does not authorize a person to practice music therapy. Application of music therapy requires board certification and institutional training/experience.
+          <i>These resources are offered merely as an introduction on topics regarding music therapy and the psychology of music, which do not authorize a person to practice music therapy. Application of music therapy requires board certification and institutional training/experience.
           </i>
         </p>
       </div>
 
       <!--Photo Gallery-->
+      <!-- TODO: change titles and authors in gallery.js -->
       <div class="photo-gallery">
         <!-- Full-width images with number text -->
         <!-- TODO: change img src -->
@@ -65,8 +66,6 @@
         <div class="mySlides"><img src="../img/sacks.jpg"></div>
         <div class="mySlides"><img src="../img/powell.jpg"></div>
         <div class="mySlides"><img src="../img/wheeler.jpg"></div>
-        <!-- <div class="mySlides"><img src="../img/backbay2.jpeg"></div>
-        <div class="mySlides"><img src="../img/backbay2.jpeg"></div> -->
       
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -75,31 +74,30 @@
         <!-- Image text -->
         <div class="caption-container">
           <div id="numbertext">1 / 4</div>
-          <!-- TODO: Add the caption for the first image here -->
-          <p id="caption">Integrative Health Through Music Therapy: Accompanying the Journey from Illness to Wellness by Suzanne B. Hanser</p>
+          <p>
+            <div id="caption">
+              <p id="book-title" style="font-style: italic;"></p>
+              <p id="author"></p>
+            </div>
+          </p>
         </div>
       
         <!-- Thumbnail images -->
-        <!-- TODO: Change src (image path) and alt (caption text) for each image -->
+        <!-- TODO: Change src (image path) and alt text for each image -->
         <div class="row">
           <div class="column">
-            <img class="demo cursor" src="../img/hanser.jpg" onclick="currentSlide(1)" alt="Integrative Health Through Music Therapy: Accompanying the Journey from Illness to Wellness by Suzanne B. Hanser">
+            <img class="demo cursor" src="../img/hanser.jpg" onclick="currentSlide(1)" alt="Integrative Health Through Music Therapy: Accompanying the Journey from Illness to Wellness">
           </div>
           <script>showSlides(1);</script>
           <div class="column">
-            <img class="demo cursor" src="../img/sacks.jpg" onclick="currentSlide(2)" alt="Musicophilia: Tales of Music and the Brain by Oliver Sacks">
+            <img class="demo cursor" src="../img/sacks.jpg" onclick="currentSlide(2)" alt="Musicophilia: Tales of Music and the Brain">
           </div>
           <div class="column">
-            <img class="demo cursor" src="../img/powell.jpg" onclick="currentSlide(3)" alt="Why We Love Music: From Mozart to Metallica - The Emotional Power of Beautiful Sounds by John Powell">
+            <img class="demo cursor" src="../img/powell.jpg" onclick="currentSlide(3)" alt="Why We Love Music: From Mozart to Metallica - The Emotional Power of Beautiful Sounds">
           </div>
           <div class="column">
             <img class="demo cursor" src="../img/wheeler.jpg" onclick="currentSlide(4)" alt="Music Therapy Handbook by Barbara L. Wheeler">
           </div>
-          <!-- <div class="column">
-            <img class="demo cursor" src="../img/backbay2.jpeg" onclick="currentSlide(5)" alt="Nature and sunrise">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="../img/backbay2.jpeg" onclick="currentSlide(6)" alt="Snowy Mountains"> -->
           </div>
         </div>
       </div>

@@ -67,7 +67,7 @@
   }
 
   #p3 {
-    padding: 0px 50px 50px 10px;
+    padding: 8% 50px 50px 12%;
   }
   #p3 .main-text {
     width: 80%;
@@ -125,6 +125,25 @@
   #p2 .credit {
     position: static;
     margin-top: 50px;
+  }
+
+  #p3 {
+    padding: 0px 50px 0px 0px;
+  }
+  #p3 .main-text {
+    margin-top: 0px;
+  }
+  #p3 .photo-gallery {
+    margin-left: 0px;
+  }
+  #p3 .photo-gallery .mySlides {
+    height: 300px;
+  }
+  #p3 .photo-gallery #numbertext {
+    width: 25px;
+  }
+  #p3 .photo-gallery #caption {
+    width: 90%;
   }
 }
 

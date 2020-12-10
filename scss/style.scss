@@ -74,7 +74,7 @@ a:hover {
 }
 
 .a-selected {
-	color: $link-selected;
+	color: $link-selected !important;
 }
 
 h4 {
@@ -227,7 +227,8 @@ h4 {
 	}
 
 	.photo-gallery {
-		width: 70%;
+		width: 80%;
+		margin-left: -10%;
 		flex-direction: column;
 		box-sizing: border-box;
 		position: relative;
@@ -237,7 +238,7 @@ h4 {
 			text-align: center;
 			background-color: $slide-background;
 			width: 100%;
-			height: 300px;
+			height: 500px;
 			padding-bottom: 20px;
 
 			img {
@@ -285,6 +286,7 @@ h4 {
 			color: $caption-font;
 			font-size: 12px;
 			margin-right: 15px;
+			width: 50px;
 		}
 		
 		/* Container for image text */
@@ -298,6 +300,12 @@ h4 {
 
 			#caption {
 				margin: 0px;
+				flex-direction: column;
+				
+				p {
+					margin: 0px;
+					margin-bottom: 5px;
+				}
 			}
 		}
 		
@@ -305,8 +313,9 @@ h4 {
 		.row {
 			width: 100%;
 			display: flex;
+			margin-top: 10px;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: center;
 			background-color: $thumbnail-background;
 		}
 
@@ -319,7 +328,7 @@ h4 {
 		/* Six columns side by side */
 		.column {
 			float: left;
-			width: 100%;
+			padding: 0px 10px;
 			height: 50px;
 			display: flex;
 			flex-direction: row;

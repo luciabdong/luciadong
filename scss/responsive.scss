@@ -82,7 +82,7 @@
 	}
 
 	#p3 {
-		padding: 0px 50px 50px 10px;
+		padding: 8% 50px 50px 12%;
 
 		.main-text {
 			width: 80%;
@@ -157,5 +157,29 @@
 			position: static;
 			margin-top: 50px;
 		}
-	}
+    }
+    
+    #p3 {
+        padding: 0px 50px 0px 0px;
+
+        .main-text {
+            margin-top: 0px;
+        }
+        
+        .photo-gallery {
+            margin-left: 0px;
+
+            .mySlides {
+                height: 300px;
+            }
+
+            #numbertext {
+                width: 25px;
+            }
+    
+            #caption {
+                width: 90%;
+            }
+        }
+    }
 }
