@@ -227,8 +227,13 @@ h4 {
 	}
 	
 	a {
+		color: $link-3a;
 		margin-left: 2px !important;
 		padding: 0px !important;
+	}
+
+	a:hover {
+		color: $link-hover-3; 
 	}
 
 	.photo-gallery {
