@@ -54,7 +54,7 @@ div {
 	display: flex;
 }
 
-p {
+p, input, textarea {
 	font-family: 'Overpass', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
@@ -100,6 +100,10 @@ h4 {
 	background-color: $background-3;
 }
 
+#color-4 {
+	background-color: $background-4;
+}
+
 // nav bar
 
 .nav-bar {
@@ -135,6 +139,18 @@ h4 {
 
 	a:hover {
 		color: $link-hover-3;
+	}
+}
+
+#nav-4 {
+	background-color: $background-4;
+
+	a {
+		color: $link-4;
+	}
+
+	a:hover {
+		color: $link-hover-4;
 	}
 }
 
@@ -349,5 +365,125 @@ h4 {
 		.active, .demo:hover {
 			opacity: 1;
 		}
+	}
+}
+
+#p4 {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-4;
+	
+	.center-box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 650px;
+		margin-left: -5%;
+	}
+
+	h4 {
+		margin-bottom: 20px;
+	}
+
+	.contact-text {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-top: 10px;
+	    margin-bottom: 20px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 90%;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+
+	#form-horizontal {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+
+		label {
+			margin-bottom: 0px;
+		}
+	}
+
+	label {
+		width: 50px;
+		margin-bottom: 5px;
+		margin-right: 5px;
+		text-align: left !important;
+	}
+
+	.form-control {
+		padding: 10px 7px;
+		text-transform: none;
+		background-color: $input-background;
+	}
+
+	input, textarea {
+		border: solid 1px $input-border;
+		border-radius: 5px;
+		background-color: $input-background;
+		color: $input-font;
+		font-size: 15px !important;
+	}
+
+	input {
+		height: 10px;
+		width: 250px;
+		outline: none;
+	}
+	
+	textarea {
+		padding: 7px !important;
+		width: 100% !important;
+		min-height: 100px;
+		max-height: 200px;
+		outline: none;
+	}
+
+	input::selection, textarea::selection {
+		background-color: $input-selected-background;
+    	color: $input-selected-font;
+	}
+
+	.btn {
+		align-self: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+		width: 90px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 10px;
+		background-color: $submit-background;
+		color: $submit-font;
+		font-size: 14px;
+		text-transform: none;
+	}
+
+	.btn:hover {
+		cursor: pointer;
+		border: 0px;
+		background-color: $submit-hover-background;
+		color: $submit-hover-font;
 	}
 }

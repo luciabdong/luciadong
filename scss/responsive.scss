@@ -94,6 +94,13 @@
 			}
 		}
 	}
+
+	#p4 {
+		.center-box {
+			margin-top: 50px;
+			margin-left: 0px;
+		}
+	}
 }
 
 // narrow/mobile screen
@@ -131,10 +138,6 @@
 		justify-content: flex-start;
 		align-items: center;
 		padding: 0px 50px 0px 0px;
-
-		// h4 {
-		// 	font-size: 30px;
-		// }
 
 		.about-container {
 			flex-direction: column;
@@ -183,4 +186,12 @@
             }
         }
     }
+
+	#p4 {
+		height: 80%;
+
+		.center-box {
+			width: 250px;
+		}
+	}
 }

@@ -75,6 +75,11 @@
   #p3 .photo-gallery .column {
     width: auto;
   }
+
+  #p4 .center-box {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
 }
 @media (max-width: 750px) {
   div {
@@ -145,6 +150,13 @@
   }
   #p3 .photo-gallery #caption {
     width: 90%;
+  }
+
+  #p4 {
+    height: 80%;
+  }
+  #p4 .center-box {
+    width: 250px;
   }
 }
 

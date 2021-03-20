@@ -20,48 +20,51 @@
   
   <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body id="color-2">
+<body id="color-4">
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--Navigation-->
-    <div class="nav-bar" id="nav-2">
+    <div class="nav-bar" id="nav-4">
       <div id="uno">
         <a href="../index.html">Home</a>
       </div>
       <div id="dos">
-        <a href="./about.html" class="a-selected">About</a>
+        <a href="./about.html">About</a>
       </div>
       <div id="tres">
         <a href="./resources.html">Resources</a>
       </div>
       <div id="cuatro">
-        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="a-selected">Contact</a>
       </div>
     </div>
     
     <!--Pages-->
-    <div class="page" id="p2">
-      <div class="about-container">
-        <div class="left-text">
-          <h4>Hi, I'm Lucia!</h4>
-          <p>
-            As an aspiring music therapist, Lucia's ambition is to bring awareness to the power of music in medicine. Her training has allowed her to practice clinical work through various establishments such as Massachusetts General Hospital and Community Music Center of Boston. She additionally volunteered at organization AbilityPath in the Bay Area, aiding children and adolescents with mental and physical disabilities.
-          </p>
-          <p>
-            Originally from the Bay Area, CA, she began her passion for music early in school and devoted much of her time toward her high school choir. This provided many opportunities to take leadership and grow as a musician; such as performing internationally at St. Peter’s Basilica, workshopping with San Francisco’s Chanticleer, as well as directing/arranging for an acapella group, earning her the director’s award for her dedication in musicianship and service. 
-          </p>
-          <p>
-            Lucia is currently wrapping up her bachelor’s degree in music therapy with a minor in psychology at Berklee College of Music, paticipating as an advocate for Berklee’s Barbershop Club and a performer in Crepusculum Choir.
-          </p>
-
+    <div class="page" id="p4">
+        <div class="center-box">
+            <h4>Contact</h4>
+            <!-- TODO: replace the action url below -->
+            <form action="https://formspree.io/f/xzbypbep" method="POST" autocomplete="off">
+                <div class="contact-text">
+                    Please leave me a message below and I'll get back to you as soon as possible!
+                </div>
+                <div class="form-group" id="form-horizontal">
+                    <label>Name:</label>
+                    <input name="name" type="text" class="form-control" placeholder=""/>
+                </div>
+                <div class="form-group" id="form-horizontal">
+                    <label>Email:</label>
+                    <input name="_replyto" type="email" class="form-control" placeholder=""/>
+                </div>
+                
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea name="message" type="text" class="form-control" placeholder=""></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
         </div>
-        <img src="../img/backbay2.jpeg" alt="">
-      </div>
-
-      <!-- Footer -->
-      <p class="credit">Copyright &copy; 2020 Lucia Dong</p>
-    </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!-- <script>

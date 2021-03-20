@@ -46,7 +46,7 @@ div {
   display: flex;
 }
 
-p {
+p, input, textarea {
   font-family: "Overpass", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -90,6 +90,10 @@ h4 {
   background-color: #f3ad74;
 }
 
+#color-4 {
+  background-color: #f3ad74;
+}
+
 .nav-bar {
   flex-direction: column;
   justify-content: center;
@@ -118,6 +122,16 @@ h4 {
   color: #da7b2d;
 }
 #nav-3 a:hover {
+  color: #fadb76;
+}
+
+#nav-4 {
+  background-color: #f3ad74;
+}
+#nav-4 a {
+  color: #da7b2d;
+}
+#nav-4 a:hover {
   color: #fadb76;
 }
 
@@ -300,6 +314,111 @@ h4 {
 }
 #p3 .photo-gallery .active, #p3 .photo-gallery .demo:hover {
   opacity: 1;
+}
+
+#p4 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ad74;
+}
+#p4 .center-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 650px;
+  margin-left: -5%;
+}
+#p4 h4 {
+  margin-bottom: 20px;
+}
+#p4 .contact-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#p4 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+#p4 .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  width: 100%;
+}
+#p4 #form-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+#p4 #form-horizontal label {
+  margin-bottom: 0px;
+}
+#p4 label {
+  width: 50px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  text-align: left !important;
+}
+#p4 .form-control {
+  padding: 10px 7px;
+  text-transform: none;
+  background-color: #f5f3f0;
+}
+#p4 input, #p4 textarea {
+  border: solid 1px #b8a07e;
+  border-radius: 5px;
+  background-color: #f5f3f0;
+  color: #b8a07e;
+  font-size: 15px !important;
+}
+#p4 input {
+  height: 10px;
+  width: 250px;
+  outline: none;
+}
+#p4 textarea {
+  padding: 7px !important;
+  width: 100% !important;
+  min-height: 100px;
+  max-height: 200px;
+  outline: none;
+}
+#p4 input::selection, #p4 textarea::selection {
+  background-color: #b8a07e;
+  color: #fff;
+}
+#p4 .btn {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #da7b2d;
+  color: #fff;
+  font-size: 14px;
+  text-transform: none;
+}
+#p4 .btn:hover {
+  cursor: pointer;
+  border: 0px;
+  background-color: #fadb76;
+  color: #b8a07e;
 }
 
 /*# sourceMappingURL=style.css.map */
