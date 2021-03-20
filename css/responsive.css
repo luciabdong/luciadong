@@ -14,12 +14,12 @@
 
   #p2 img {
     width: 400px;
-    height: 550px;
+    height: 400px;
   }
 }
 @media (max-width: 920px) {
   #p2 img {
-    width: 200px;
+    width: 275px;
     height: 275px;
   }
 }

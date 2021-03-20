@@ -195,7 +195,7 @@ h4 {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 12% 80px 50px 5%;
+	padding: 14% 80px 50px 5%;
 	background-color: $background-2;
 	
 	.about-container {
@@ -215,8 +215,8 @@ h4 {
 	}
 	
 	img {
-		height: 413px;
-		width: 300px;
+		height: 320px;
+		width: 320px;
 	}
 
 	.credit {
@@ -240,6 +240,16 @@ h4 {
 		max-width: 900px;
 		margin-top: 50px;
 		margin-bottom: 50px;
+	}
+	
+	a {
+		color: $link-3a;
+		margin-left: 2px !important;
+		padding: 0px !important;
+	}
+
+	a:hover {
+		color: $link-hover-3; 
 	}
 
 	.photo-gallery {
