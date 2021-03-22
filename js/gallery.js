@@ -37,16 +37,16 @@ function showSlides(n) {
 // TODO: change titles
 function getTitle(i) {
   if (slideIndex == 1) {
-    return "Integrative Health Through Music Therapy: Accompanying the Journey from Illness to Wellness";
+    return "Musicophilia: Tales of Music and the Brain (2007)";
   }
   else if (slideIndex == 2) {
-    return "Musicophilia: Tales of Music and the Brain";
+    return "Why We Love Music: From Mozart to Metallica - The Emotional Power of Beautiful Sounds (2016)";
   }
   else if (slideIndex == 3) {
-    return "Why We Love Music: From Mozart to Metallica - The Emotional Power of Beautiful Sounds";
+    return "This Is Your Brain on Music: The Science of a Human Obsession (2006)";
   }
   else if (slideIndex == 4) {
-    return "Music Therapy Handbook";
+    return "Tune In: Use Music Intentionally to Curb Stress, Boost Morale, and Restore Health. A Music Therapy Approach to Life. Second Edition (2015)";
   }
   else {
     return "";
@@ -56,16 +56,16 @@ function getTitle(i) {
 // TODO: change authors
 function getAuthor(i) {
   if (slideIndex == 1) {
-    return "Suzanne B. Hanser";
-  }
-  else if (slideIndex == 2) {
     return "Oliver Sacks";
   }
-  else if (slideIndex == 3) {
+  else if (slideIndex == 2) {
     return "John Powell";
   }
+  else if (slideIndex == 3) {
+    return "Daniel J. Levitin";
+  }
   else if (slideIndex == 4) {
-    return "Barbara L. Wheeler";
+    return "Jennifer Buchanan";
   }
   else {
     return "";
