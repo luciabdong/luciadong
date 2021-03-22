@@ -83,7 +83,7 @@ h4 {
 }
 
 #color-2 {
-  background-color: #89abe3;
+  background-color: #97a9eb;
 }
 
 #color-3 {
@@ -91,7 +91,7 @@ h4 {
 }
 
 #color-4 {
-  background-color: #f3ad74;
+  background-color: #93d68d;
 }
 
 .nav-bar {
@@ -106,7 +106,7 @@ h4 {
 }
 
 #nav-2 {
-  background-color: #89abe3;
+  background-color: #97a9eb;
 }
 #nav-2 a {
   color: #567add;
@@ -126,10 +126,10 @@ h4 {
 }
 
 #nav-4 {
-  background-color: #f3ad74;
+  background-color: #93d68d;
 }
 #nav-4 a {
-  color: #da7b2d;
+  color: #469256;
 }
 #nav-4 a:hover {
   color: #fadb76;
@@ -168,7 +168,7 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 14% 80px 50px 5%;
-  background-color: #89abe3;
+  background-color: #97a9eb;
 }
 #p2 .about-container {
   flex-direction: row;
@@ -328,7 +328,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3ad74;
+  background-color: #93d68d;
 }
 #p4 .center-box {
   flex-direction: column;
@@ -380,13 +380,13 @@ h4 {
 #p4 .form-control {
   padding: 10px 7px;
   text-transform: none;
-  background-color: #f5f3f0;
+  background-color: white;
 }
 #p4 input, #p4 textarea {
-  border: solid 1px #b8a07e;
+  border: solid 1px #469256;
   border-radius: 5px;
-  background-color: #f5f3f0;
-  color: #b8a07e;
+  background-color: white;
+  color: #000000;
   font-size: 15px !important;
 }
 #p4 input {
@@ -402,7 +402,7 @@ h4 {
   outline: none;
 }
 #p4 input::selection, #p4 textarea::selection {
-  background-color: #b8a07e;
+  background-color: #469256;
   color: #fff;
 }
 #p4 .btn {
@@ -417,7 +417,7 @@ h4 {
   margin-bottom: 20px;
   border: none;
   border-radius: 10px;
-  background-color: #da7b2d;
+  background-color: #469256;
   color: #fff;
   font-size: 14px;
   text-transform: none;
