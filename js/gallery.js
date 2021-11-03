@@ -46,7 +46,7 @@ function getTitle(i) {
     return "This Is Your Brain on Music: The Science of a Human Obsession (2006)";
   }
   else if (slideIndex == 4) {
-    return "Tune In: Use Music Intentionally to Curb Stress, Boost Morale, and Restore Health. A Music Therapy Approach to Life. Second Edition (2015)";
+    return "Defining Music Therapy. Third Edition (2015)";
   }
   else {
     return "";
