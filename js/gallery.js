@@ -65,7 +65,7 @@ function getAuthor(i) {
     return "Daniel J. Levitin";
   }
   else if (slideIndex == 4) {
-    return "Jennifer Buchanan";
+    return "Kenneth E. Bruscia";
   }
   else {
     return "";
