@@ -169,6 +169,7 @@ h4 {
   align-items: flex-start;
   padding: 14% 80px 50px 5%;
   background-color: #97a9eb;
+  margin-left: 50px;
 }
 #p2 .about-container {
   flex-direction: row;
