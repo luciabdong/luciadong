@@ -14,13 +14,13 @@
 
   #p2 img {
     width: 400px;
-    height: 400px;
+    height: 490px;
   }
 }
 @media (max-width: 920px) {
   #p2 img {
-    width: 275px;
-    height: 275px;
+    width: 240px;
+    height: 295px;
   }
 }
 @media (max-width: 820px) {
