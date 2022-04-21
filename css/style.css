@@ -10,9 +10,9 @@ html, body, .page {
   padding: 0;
   transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
   -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
-  color: white;
+  color: #7C2828;
   background-color: white;
-  font-family: "Overpass", sans-serif;
+  font-family: "Spectral", sans-serif;
   display: flex;
   flex-direction: row;
   font-weight: 300px;
@@ -47,7 +47,7 @@ div {
 }
 
 p, input, textarea {
-  font-family: "Overpass", sans-serif;
+  font-family: "Spectral", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
@@ -74,7 +74,7 @@ h4 {
   margin: 0px;
   letter-spacing: 1px;
   font-size: 36px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
   font-weight: 500;
 }
 
@@ -150,6 +150,7 @@ h4 {
   margin-bottom: 30px;
   font-size: 60px;
   text-transform: uppercase;
+  font-family: Montserrat;
 }
 #p1 .center-box {
   flex-direction: column;
@@ -209,7 +210,7 @@ h4 {
   margin-bottom: 50px;
 }
 #p3 a {
-  color: white;
+  color: #7C2828;
   margin-left: 2px !important;
   padding: 0px !important;
 }
@@ -255,12 +256,12 @@ h4 {
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 10px;
+  padding: 10px !important;
   margin-top: -50px;
-  color: white;
+  color: #7C2828 te;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 5px;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -271,7 +272,7 @@ h4 {
   background-color: #da7b2d;
 }
 #p3 .photo-gallery #numbertext {
-  color: white;
+  color: #7C2828;
   font-size: 12px;
   margin-right: 15px;
   width: 50px;
@@ -280,9 +281,9 @@ h4 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: #dba274;
+  background-color: #D9D5F2;
   padding: 10px 15px;
-  color: white;
+  color: #7C2828;
 }
 #p3 .photo-gallery .caption-container #caption {
   margin: 0px;
@@ -298,7 +299,7 @@ h4 {
   margin-top: 10px;
   flex-direction: row;
   justify-content: center;
-  background-color: #f3ad74;
+  background-color: #D9D5F2;
 }
 #p3 .photo-gallery .row:after {
   content: "";
@@ -384,7 +385,7 @@ h4 {
   background-color: white;
 }
 #p4 input, #p4 textarea {
-  border: solid 1px #469256;
+  border: solid 1px #7C2828;
   border-radius: 5px;
   background-color: white;
   color: #000000;
@@ -403,7 +404,7 @@ h4 {
   outline: none;
 }
 #p4 input::selection, #p4 textarea::selection {
-  background-color: #469256;
+  background-color: #7C2828;
   color: #fff;
 }
 #p4 .btn {
@@ -418,7 +419,7 @@ h4 {
   margin-bottom: 20px;
   border: none;
   border-radius: 10px;
-  background-color: #469256;
+  background-color: #7C2828;
   color: #fff;
   font-size: 14px;
   text-transform: none;
