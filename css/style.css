@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-  color: #fadb76;
+  color: #4fb0fa;
 }
 
 .a-selected {
@@ -83,7 +83,7 @@ h4 {
 }
 
 #color-2 {
-  background-color: #BBE7DF;
+  background-color: #bde6f1;
 }
 
 #color-3 {
@@ -106,7 +106,7 @@ h4 {
 }
 
 #nav-2 {
-  background-color: #BBE7DF;
+  background-color: #bde6f1;
 }
 #nav-2 a {
   color: #7C2828;
@@ -122,7 +122,7 @@ h4 {
   color: #7C2828;
 }
 #nav-3 a:hover {
-  color: #fadb76;
+  color: #4fb0fa;
 }
 
 #nav-4 {
@@ -147,10 +147,10 @@ h4 {
   background-color: #FAE2CC;
 }
 #p1 .name-title {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 60px;
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: Libre Baskerville;
 }
 #p1 .center-box {
   flex-direction: column;
@@ -169,7 +169,7 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 14% 80px 50px 5%;
-  background-color: #BBE7DF;
+  background-color: #bde6f1;
   margin-left: 50px;
 }
 #p2 .about-container {
@@ -215,7 +215,7 @@ h4 {
   padding: 0px !important;
 }
 #p3 a:hover {
-  color: #fadb76;
+  color: #4fb0fa;
 }
 #p3 .photo-gallery {
   width: 80%;
@@ -269,7 +269,7 @@ h4 {
   right: 0;
 }
 #p3 .photo-gallery .prev:hover, #p3 .photo-gallery .next:hover {
-  background-color: #da7b2d;
+  background-color: #4fb0fa68;
 }
 #p3 .photo-gallery #numbertext {
   color: #7C2828;
@@ -428,7 +428,7 @@ h4 {
   cursor: pointer;
   border: 0px;
   background-color: #fadb76;
-  color: #b8a07e;
+  color: #7C2828;
 }
 
 /*# sourceMappingURL=style.css.map */
